@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <section
       id="contact"
@@ -21,9 +27,8 @@ export default function Contact() {
       </div>
       <form
         name="contact"
-        className="flex flex-col items-center gap-4 *:sm:w-1/2"
         method="post"
-        data-netlify="true"
+        className="flex flex-col items-center gap-4 *:sm:w-1/2"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="flex flex-col gap-1">
@@ -35,6 +40,8 @@ export default function Contact() {
             id="name"
             name="name"
             placeholder="Enter your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="p-1 pl-2 text-sm placeholder-zinc-400 text-zinc-800"
             required
           />
@@ -48,6 +55,8 @@ export default function Contact() {
             id="email"
             name="email"
             placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="p-1 pl-2 text-sm placeholder-zinc-400 text-zinc-800"
             required
           />
@@ -60,6 +69,8 @@ export default function Contact() {
             id="message"
             name="message"
             placeholder="Enter your message..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="p-1 pl-2 text-sm resize-none h-40 placeholder-zinc-400 text-zinc-800"
             required
           />
