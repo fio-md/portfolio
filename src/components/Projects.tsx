@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
-import bandsite from "../assets/Bandsite.mov";
-import brainflix from "../assets/Brainflix.mov";
+import bandsite from "../assets/Bandsite.mp4";
+import brainflix from "../assets/Brainflix.mp4";
+import fishing from "../assets/Fishing.mp4";
 
 export default function Projects() {
   const projectData = [
@@ -17,12 +18,21 @@ export default function Projects() {
     {
       id: 16,
       title: "Fishing for Compliments",
-      tech: ["Phaser", "React", "Node.js", "Express", "MySQL"],
+      tech: [
+        "Phaser",
+        "React",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "JWT",
+        "Axios",
+        "Zod",
+      ],
       description:
-        "A 2D fishing game where fish give you compliments. This was my capstone project for BrainStation.",
+        "A 2D fishing game where fish give you compliments. Features user registration/login using JWT authentication and Zod for form validation.",
       link: "http://www.github.com/fio-md/fishing-for-compliments",
       api_link: "http://www.github.com/fio-md/fishing-for-compliments-api",
-      demo: "",
+      demo: fishing,
     },
     {
       id: 17,
@@ -47,7 +57,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="pt-4 pb-4 bg-zinc-100 dark:bg-zinc-900">
+    <section id="projects" className="pt-4 pb-4 bg-zinc-200 dark:bg-zinc-900">
       <h2 className="text-4xl my-8 text-center">projects</h2>
       <ul className="divide-y divide-solid divide-zinc-600 dark:divide-zinc-400 divide-y-1 ">
         {projectData.map((project) => (

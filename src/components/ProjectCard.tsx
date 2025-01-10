@@ -15,7 +15,7 @@ export default function ProjectCard({
   };
 }) {
   return (
-    <article className="flex flex-col lg:flex-row items-center justify-center gap-8 p-8 container my-8">
+    <article className="flex flex-col lg:flex-row items-center justify-center gap-8 p-12 container">
       {project.demo !== "" ? <Video demo={project.demo} /> : ""}
       <div className="w-3/4 text-center flex flex-col gap-4 items-center">
         <h3 className="border-b-2 pb-1 border-purple-400">{project.title}</h3>

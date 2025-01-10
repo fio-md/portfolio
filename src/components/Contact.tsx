@@ -1,25 +1,31 @@
 export default function Contact() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    console.log("Submitted!");
+    alert("Submitted! Thank you.");
   }
 
   return (
-    <section className="mb-16 dark:bg-gradient-to-t dark:from-zinc-800 dark:to-zinc-900">
+    <section
+      id="contact"
+      className="min-h-full h-dvh flex flex-col justify-center bg-gradient-to-t from-zinc-50 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900"
+    >
       <h2 className="text-4xl py-8 text-center">contact</h2>
-      <div className="flex gap-4 justify-center my-8 *:border-b-2 *:border-cyan-600 *:pb-1">
+      <div className="flex gap-8 justify-center my-8 *:pb-1">
         <a
-          className="hover:text-cyan-600"
+          className="hover:text-cyan-600 border-b-2 border-cyan-600 "
           href="https://www.linkedin.com/in/fmarky/"
         >
           LinkedIn
         </a>
-        <a className="hover:text-cyan-600" href="https://github.com/fio-md">
+        <a
+          className="hover:text-green-500 border-b-2 border-green-500 "
+          href="https://github.com/fio-md"
+        >
           GitHub
         </a>
       </div>
       <form
-        className="flex flex-col items-center gap-4 *:w-1/2"
+        className="flex flex-col items-center gap-4 *:sm:w-1/2"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col gap-1">

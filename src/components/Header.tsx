@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="flex align-middle p-4 md:px-8 lg:py-6 dark:bg-zinc-900 ">
+    <header className="flex align-middle p-4 md:px-8 md:py-6 ">
       <div className="flex-grow">
         <a
           href="/"

@@ -4,12 +4,12 @@ function playVideo(event: React.MouseEvent<HTMLVideoElement>): void {
 function pauseVideo(event: React.MouseEvent<HTMLVideoElement>): void {
   (event.target as HTMLVideoElement).pause();
 }
-
+//border-2 border-zinc-300 dark:border-zinc-500"
 export default function Video({ demo }: { demo: string }) {
   return (
-    <div className="border-2 border-zinc-300 dark:border-zinc-500">
+    <div className="w-1/2 rounded overflow-hidden">
       <video
-        className="w-full"
+        className="w-full h-full"
         onMouseEnter={playVideo}
         onMouseLeave={pauseVideo}
       >

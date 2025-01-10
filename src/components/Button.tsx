@@ -8,7 +8,7 @@ export default function Button({
   return (
     <a
       href={link}
-      className="px-4 py-2 border-2 text-center border-orange-400 hover:bg-orange-400 transition-all"
+      className="px-4 py-2 border-2 text-center border-green-500 hover:bg-green-500 transition-all"
     >
       {title}
     </a>
