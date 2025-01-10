@@ -25,9 +25,12 @@ export default function Contact() {
         </a>
       </div>
       <form
+        name="contact"
+        data-netlify="true"
         className="flex flex-col items-center gap-4 *:sm:w-1/2"
         onSubmit={handleSubmit}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="flex flex-col gap-1">
           <label htmlFor="name" className="w-20 text-sm">
             Name:
