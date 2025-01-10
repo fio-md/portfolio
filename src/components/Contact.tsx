@@ -33,6 +33,7 @@ export default function Contact() {
           <input
             type="text"
             id="name"
+            name="name"
             placeholder="Enter your name"
             className="p-1 pl-2 text-sm placeholder-zinc-400 text-zinc-800"
             required
@@ -45,6 +46,7 @@ export default function Contact() {
           <input
             type="email"
             id="email"
+            name="email"
             placeholder="Enter your email"
             className="p-1 pl-2 text-sm placeholder-zinc-400 text-zinc-800"
             required
@@ -56,6 +58,7 @@ export default function Contact() {
           </label>
           <textarea
             id="message"
+            name="message"
             placeholder="Enter your message..."
             className="p-1 pl-2 text-sm resize-none h-40 placeholder-zinc-400 text-zinc-800"
             required
