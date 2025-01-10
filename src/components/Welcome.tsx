@@ -4,8 +4,8 @@ export default function Welcome() {
       <h1 className="text-3xl my-8 text-center">Hello! I'm Fiorella.</h1>
       <div className="w-80">
         <h2 className="text-lg text-center mb-2">
-          I'm a <span className="text-purple-400">Software Developer</span> with
-          a background in <span className="text-purple-400">audio</span>.
+          I'm a <span className="text-purple-400">Full Stack Developer</span>{" "}
+          with a background in <span className="text-green-500">audio</span>.
         </h2>
       </div>
       <div className="max-w-lg py-8 px-8 my-16 border-yellow-300 dark:border-yellow-200 border-2">

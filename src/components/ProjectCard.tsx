@@ -28,9 +28,13 @@ export default function ProjectCard({
         </div>
         <p>{project.description}</p>
         <div className="flex gap-4">
-          <Button title="repo" link={project.link} />
+          {project.link !== "" ? (
+            <Button title="FE repo" link={project.link} />
+          ) : (
+            ""
+          )}
           {project.api_link !== "" ? (
-            <Button title="API repo" link={project.api_link} />
+            <Button title="BE repo" link={project.api_link} />
           ) : (
             ""
           )}

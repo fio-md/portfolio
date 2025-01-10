@@ -2,22 +2,23 @@ import ProjectCard from "./ProjectCard";
 import bandsite from "../assets/Bandsite.mp4";
 import brainflix from "../assets/Brainflix.mp4";
 import fishing from "../assets/Fishing.mp4";
+import writers from "../assets/writers.mp4";
 
 export default function Projects() {
   const projectData = [
     {
-      id: 15,
+      id: 14,
       title: "Portfolio Website",
-      tech: ["React", "Tailwind", "Typescript"],
+      tech: ["React", "Tailwind CSS", "Typescript"],
       description:
         "Minimalist portfolio website to display my latest projects.",
-      link: "http://www.github.com/fio-md/dev-portfolio",
+      link: "https://github.com/fio-md/portfolio",
       api_link: "",
       demo: "",
     },
     {
-      id: 16,
-      title: "Fishing for Compliments",
+      id: 15,
+      title: "Fishing for Compliments (In Progress)",
       tech: [
         "Phaser",
         "React",
@@ -30,14 +31,24 @@ export default function Projects() {
       ],
       description:
         "A 2D fishing game where fish give you compliments. Features user registration/login using JWT authentication and Zod for form validation.",
-      link: "http://www.github.com/fio-md/fishing-for-compliments",
+      link: "",
       api_link: "http://www.github.com/fio-md/fishing-for-compliments-api",
       demo: fishing,
     },
     {
+      id: 16,
+      title: "Writers Unblocked",
+      tech: ["OpenAI", "React", "SASS", "Node.js", "Express"],
+      description:
+        "Hackathon pair-programming project. A website that uses AI to create a book cover and description based on user's prompts.",
+      link: "",
+      api_link: "",
+      demo: writers,
+    },
+    {
       id: 17,
       title: "Brainflix",
-      tech: ["Typescript", "React", "Node.js", "Express", "Axios"],
+      tech: ["Typescript", "React", "SASS", "Node.js", "Express", "Axios"],
       description:
         "Full stack site resembling a video sharing platform. This is a bootcamp project I converted to TypeScript.",
       link: "http://www.github.com/fio-md/brainflix",
