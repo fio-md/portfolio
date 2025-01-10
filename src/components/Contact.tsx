@@ -21,8 +21,9 @@ export default function Contact() {
       </div>
       <form
         name="contact"
-        data-netlify="true"
         className="flex flex-col items-center gap-4 *:sm:w-1/2"
+        method="post"
+        data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="flex flex-col gap-1">
