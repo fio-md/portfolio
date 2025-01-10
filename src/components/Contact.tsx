@@ -1,9 +1,4 @@
 export default function Contact() {
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    alert("Submitted! Thank you.");
-  }
-
   return (
     <section
       id="contact"
@@ -28,7 +23,6 @@ export default function Contact() {
         name="contact"
         data-netlify="true"
         className="flex flex-col items-center gap-4 *:sm:w-1/2"
-        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="flex flex-col gap-1">
