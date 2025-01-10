@@ -59,7 +59,7 @@ export default function Projects() {
         "Two page site with dynamic data from an external API. This is also a bootcamp project I converted to TypeScript.",
       link: "http://www.github.com/fio-md/bandsite",
       api_link: "",
-      demo: "/videos/bandiste.mp4",
+      demo: "/videos/bandsite.mp4",
     },
   ];
 
