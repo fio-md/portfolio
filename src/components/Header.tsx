@@ -9,15 +9,20 @@ export default function Header() {
           fmd
         </a>
       </div>
-      <nav>
-        <ul className="flex gap-4">
-          <li className="hover:-translate-y-1 border-b-2 pb-2 border-orange-400 hover:text-orange-400 cursor-pointer transition-all">
-            <a href="#projects">projects</a>
-          </li>
-          <li className="hover:-translate-y-1 border-b-2 pb-2 border-orange-400 hover:text-orange-400 cursor-pointer transition-all">
-            <a href="#contact">contact</a>
-          </li>
-        </ul>
+      <nav className="flex gap-4">
+        <a
+          href="#projects"
+          className="hover:-translate-y-1 border-b-2 pb-2 border-orange-400 hover:text-orange-400 cursor-pointer transition-all"
+        >
+          projects
+        </a>
+
+        <a
+          href="#contact"
+          className="hover:-translate-y-1 border-b-2 pb-2 border-orange-400 hover:text-orange-400 cursor-pointer transition-all"
+        >
+          contact
+        </a>
       </nav>
     </header>
   );
